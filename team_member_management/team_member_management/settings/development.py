@@ -2,9 +2,11 @@ from .base import *
 from decouple import config
 import os
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = "adfadfadfiouu23jo234234"
 
 DEBUG = True
+
+ALLOWED_HOSTS = ['0.0.0.0']
 
 DATABASES = {
     'default': {
@@ -31,3 +33,4 @@ LOGGING = {
 }
 
 STATIC_ROOT = '/home/vishal/Documents/datawrkz/Interview_tests/platform_engineer_test/team_member_management/static/'
+

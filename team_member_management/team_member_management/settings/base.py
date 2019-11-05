@@ -1,7 +1,7 @@
 from decouple import config
 import os
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = "adfadfadfiouu23jo234234"
 
 ROOT_URLCONF = 'team_member_management.urls'
 

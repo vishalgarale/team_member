@@ -17,3 +17,4 @@ env/*
 !.travis.yml
 !.isort.cfg
 db.sqlite3
+team_member_management/static/*
