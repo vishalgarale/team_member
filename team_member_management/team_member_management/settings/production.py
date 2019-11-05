@@ -3,7 +3,7 @@ from decouple import config
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['0.0.0.0', ]
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 DATABASES = {
     "default": {

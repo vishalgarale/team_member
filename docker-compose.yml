@@ -15,7 +15,7 @@ services:
     build:
       context: ./team_member_management
       dockerfile: Dockerfile.prod
-    command: bash -c "python manage.py migrate --settings=team_member_management.settings.production && python manage.py collectstatic --noinput --settings=team_member_management.settings.production && gunicorn team_member_management.wsgi:application --bind 0.0.0.0:8000 --env DJANGO_SETTINGS_MODULE=team_member_management.settings.production -w 4"
+    command: bash -c "python manage.py migrate --settings=team_member_management.settings.production && python manage.py collectstatic --noinput --settings=team_member_management.settings.production && gunicorn team_member_management.wsgi:application --log-level debug --bind 0.0.0.0:8000 --env DJANGO_SETTINGS_MODULE=team_member_management.settings.production -w 4"
     container_name: team_member_service
     expose:
       - "8000"
