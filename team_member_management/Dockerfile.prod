@@ -1,0 +1,12 @@
+FROM python:3.6
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+RUN mkdir /dock_team_member
+
+WORKDIR /dock_team_member
+
+ADD . /dock_team_member/
+
+RUN pip install -r requirements.txt
