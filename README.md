@@ -1,7 +1,7 @@
 # Team Member
 Team Member CRUD
 
-Pull repository then
+Install Docker, pull repository then
 
 Create .env and .env.db files with below variables
 
@@ -29,3 +29,6 @@ For .env.db example
 Then run 
 
 	sudo docker-compose up --build -d
+	
+Now check this URL in browser 
+	http://0.0.0.0/v1/team-member/
